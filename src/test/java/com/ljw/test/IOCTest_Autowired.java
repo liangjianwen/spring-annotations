@@ -3,6 +3,7 @@ package com.ljw.test;
 import com.ljw.bean.Person;
 import com.ljw.config.MainConfigOfAutowired;
 import com.ljw.config.MainConfigOfPropertyValue;
+import com.ljw.dao.BookDao;
 import com.ljw.service.BookService;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -15,6 +16,9 @@ public class IOCTest_Autowired {
     public void test1(){
         BookService bookService = applicationContext.getBean(BookService.class);
         System.out.println(bookService);
+
+        /*BookDao bookDao = applicationContext.getBean(BookDao.class);
+        System.out.println(bookDao);*/
         //关闭容器
         applicationContext.close();
     }
