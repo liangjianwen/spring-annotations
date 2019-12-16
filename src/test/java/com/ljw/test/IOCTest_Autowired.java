@@ -1,5 +1,8 @@
 package com.ljw.test;
 
+import com.ljw.bean.Boss;
+import com.ljw.bean.Car;
+import com.ljw.bean.Color;
 import com.ljw.bean.Person;
 import com.ljw.config.MainConfigOfAutowired;
 import com.ljw.config.MainConfigOfPropertyValue;
@@ -17,8 +20,16 @@ public class IOCTest_Autowired {
         BookService bookService = applicationContext.getBean(BookService.class);
         System.out.println(bookService);
 
-        /*BookDao bookDao = applicationContext.getBean(BookDao.class);
+       /* BookDao bookDao = applicationContext.getBean(BookDao.class);
         System.out.println(bookDao);*/
+        Boss boss = applicationContext.getBean(Boss.class);
+        System.out.println(boss);
+        Car car = applicationContext.getBean(Car.class);
+        System.out.println(car);
+
+        Color color = applicationContext.getBean(Color.class);
+        System.out.println(color);
+        System.out.println(applicationContext);
         //关闭容器
         applicationContext.close();
     }
