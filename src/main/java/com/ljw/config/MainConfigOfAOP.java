@@ -34,6 +34,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  *      @EnableAspectJAutoProxy ；
  *  1、@EnableAspectJAutoProxy是什么？
  *          @Import({AspectJAutoProxyRegistrar.class}) ；给容器中导入AspectJAutoProxyRegistrar
+ *              利用AspectJAutoProxyRegistrar自定义给容器中注册bean；
  */
 @EnableAspectJAutoProxy
 @Configuration
