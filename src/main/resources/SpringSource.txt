@@ -7,7 +7,7 @@ Spring容器的refresh()【创建刷新】；
     1）、refreshBeanFactory();刷新【创建】BeanFactory；
             创建了一个this.beanFactory = new DefaultListableBeanFactory();
             设置id;
-    2)、getBeanFactory();返回刚才GenericApplicationContext创建的BeanFactory对象；
+    2）、getBeanFactory();返回刚才GenericApplicationContext创建的BeanFactory对象；
     3）、将创建的BeanFactory【DefaultListableBeanFactory】返回；
 3、prepareBeanFactory(beanFactory);BeanFactory的预准备工作（BeanFactory进行一些设置）；
     1）、设置BeanFactory的类加载器、支持表达式解析器...
